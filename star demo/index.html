@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Star Limo</title>
+<style type="text/css">
+body 
+{
+	margin: 0px;
+	padding: 0px;
+	background: url(images/bg.jpg) repeat top center;
+}
+.wrapper {
+	padding: 0px;
+	margin: 0px auto;
+	height: 4421px;
+	background: url(images/index.jpg) center top no-repeat;
+}
+.inner {
+	position: relative;
+	margin: 0 auto;
+	width: 1350px;
+}
+.banner-wrapper {
+	position: absolute;
+	top: -220px;
+	left: 0px;
+	z-index:3;
+}
+.header{
+	position: relative;
+    z-index: 999;
+}
+
+
+</style>
+<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+</head>
+
+<body>
+<div class="wrapper" align="center">
+	<div class="header"><img src="images/header.png"></div>
+  <div class="inner">
+    <div class="banner-wrapper">
+      <div id="slider" class="nivoSlider"> 
+      <img src="images/banner-1.jpg" alt="" />
+      <img src="images/banner-2.jpg" alt="" />  
+      <img src="images/banner-3.jpg" alt="" /> 
+       </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.4.3.min.js"></script> 
+<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script> 
+<script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+</body>
+</html>
